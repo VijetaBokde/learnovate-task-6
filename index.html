@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>learnovate task6</title>
+</head>
+
+<body>
+    <h1>Perform all string operations and print line by line all the strings in single page
+    </h1><br>
+    <hr><br>
+
+    <script>
+        var str = "Hello World";
+        var str1 = "World";
+        var text = String.fromCharCode(65);
+        var str3 = "Hello world, welcome to the universe.";
+        var str4 = "ab";
+        var str5 = "cd";
+    </script>
+
+    <h2><b> 1) toLowerCase():Converts a string to lowercase letters.</b></h2>
+    <script>
+        var len = str.toLowerCase();
+        document.write(len);
+    </script>
+    <br><br>
+
+    <h2><b> 2) toUpperCase():Converts a string to uppercase letters.</b></h2>
+    <script>
+        var len = str.toUpperCase();
+        document.write(len);
+    </script>
+    <br><br>
+
+    <h2><b> 3) replace():Searches a string for a specified value, or a regular expression, and returns a new string
+            where
+            the specified values are replaced.</b></h2>
+    <script>
+        var len = str.replace("World", "Everyone");
+        document.write(len);
+    </script>
+    <br><br>
+
+    <h2><b> 4) charAt():Returns the character at the specified index (position).</b></h2>
+    <script>
+        var len = str.charAt(0);
+        document.write(len);
+    </script>
+    <br><br>
+
+    <h2><b> 5) charCodeAt():Returns the Unicode of the character at the specified index.</b></h2>
+    <script>
+        var len = str.charCodeAt(0);
+        document.write(len);
+    </script>
+    <br><br>
+
+    <h2><b> 6) concat():Joins two or more strings, and returns a new joined strings.</b></h2>
+    <script>
+        var len = str.concat(str1);
+        document.write(len);
+    </script>
+    <br><br>
+
+    <h2><b> 7)slice():Extracts a part of a string and returns a new string.</b></h2>
+    <script>
+        var len = str.slice(0, 5);
+        document.write(len);
+    </script>
+    <br><br>
+
+    <h2><b> 8)split():Splits a string into an array of substrings.</b></h2>
+    <script>
+        var len = str.split(" ");
+        document.write(len);
+    </script>
+    <br><br>
+
+    <h2><b> 9)substr():Extracts the characters from a string, beginning at a specified start position, and through the
+            specified number of character.</b></h2>
+    <script>
+        var len = str.substr(1, 4);
+        document.write(len);
+    </script>
+    <br><br>
+
+    <h2><b> 10)endsWith():Checks whether a string ends with specified string/characters.</b></h2>
+    <script>
+        var len = str.endsWith("world");
+        document.write(len);
+    </script>
+    <br><br>
+
+    <h2><b> 11)fromCharCode():Converts Unicode values to characters.</b></h2>
+    <script>
+        var len = text;
+        document.write(len);
+    </script>
+    <br><br>
+
+    <h2><b> 12)includes():Checks whether a string contains the specified string/characters.</b></h2>
+    <script>
+        var len = str3.includes("world");
+        document.write(len);
+    </script>
+    <br><br>
+
+    <h2><b> 13)indexOf():Returns the position of the first found occurrence of a specified value in a string.</b></h2>
+    <script>
+        var len = str3.indexOf("welcome");
+        document.write(len);
+    </script>
+    <br><br>
+
+    <h2><b> 14)lastIndexOf():Returns the position of the last found occurrence of a specified value in a string.</b>
+    </h2>
+    <script>
+        var len = str3.lastIndexOf("universe");
+        document.write(len);
+    </script>
+    <br><br>
+
+    <h2><b> 15)localeCompare():Compares two strings in the current locale.</b></h2>
+    <script>
+        var len = str4.localeCompare(str5);
+        document.write(len);
+    </script>
+    <br><br>
+
+</body>
+
+</html>
